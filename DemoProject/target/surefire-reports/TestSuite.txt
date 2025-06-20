@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.768 s - in TestSuite
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 3, Time elapsed: 35.508 s <<< FAILURE! - in TestSuite
+verifyTheUserIsAbleToLoginUsingInvalidPassCredentials(testscripts.LoginTest)  Time elapsed: 0.089 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: pages/LoginPage
+	at testscripts.LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassCredentials(LoginTest.java:45)
+Caused by: java.lang.ClassNotFoundException: pages.LoginPage
+	at testscripts.LoginTest.verifyTheUserIsAbleToLoginUsingInvalidPassCredentials(LoginTest.java:45)
+
+browserQuit(testscripts.LoginTest)  Time elapsed: 0.093 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: utilities/ScreenshotUtility
+Caused by: java.lang.ClassNotFoundException: utilities.ScreenshotUtility
+

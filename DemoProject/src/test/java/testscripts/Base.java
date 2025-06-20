@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -40,6 +41,7 @@ public class Base
 		//driver=new ChromeDriver();
 		if(browser.equalsIgnoreCase("chrome"))
 		{
+			//ChromeOptions options = new ChromeOptions();
 			driver=new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("edge"))
