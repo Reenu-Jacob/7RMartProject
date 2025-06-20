@@ -15,7 +15,7 @@ public class AdminUsersPage
 	@FindBy(xpath="//input[@id='password']")WebElement password;
 	@FindBy(xpath="//select[@id='user_type']")WebElement selectAdmin;
 	@FindBy(xpath="//button[@name='Create']")WebElement saveButton;
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertMessage;
+	//@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alertMessage;
 	
 	public WebDriver driver;
 	
@@ -59,9 +59,9 @@ public class AdminUsersPage
 		saveButton.click();
 	}
 	
-	public boolean alertMessageOnAdminUser()
+	/*public boolean alertMessageOnAdminUser()
 	{
 		return alertMessage.isDisplayed() ;
 		
-	}
+	}*/
 }
